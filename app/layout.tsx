@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Baloo_Bhaijaan_2, Poppins, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Card, CardContent } from "@/components/ui/card";
+import { cn } from "@/lib/utils";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -32,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} ${balooBhaijaan.variable} ${geistMono.variable} font-sans antialiased`}
+        className={`${balooBhaijaan.variable} ${poppins.variable} ${geistMono.variable} font-sans antialiased`}
       >
         {children}
       </body>
