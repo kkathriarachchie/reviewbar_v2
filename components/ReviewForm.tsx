@@ -52,6 +52,7 @@ export function ReviewForm({ onSubmit }: ReviewFormProps) {
               setFormData({ ...formData, email: e.target.value })
             }
             placeholder="Enter your email"
+            className="p-6"
           />
         </div>
 
@@ -67,7 +68,7 @@ export function ReviewForm({ onSubmit }: ReviewFormProps) {
               setFormData({ ...formData, review: e.target.value })
             }
             placeholder="Write your review for this product here."
-            className="min-h-[100px] max-h-[200px] resize-none overflow-y-auto"
+            className="min-h-[100px] max-h-[200px] resize-none overflow-y-auto p-6"
           />
         </div>
       </div>
