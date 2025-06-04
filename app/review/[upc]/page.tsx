@@ -78,7 +78,7 @@ export default function ReviewPage() {
 
   return (
     <div className="pt-6 px-6 min-h-screen flex flex-col">
-      <Toaster position="top-center" richColors />
+      <Toaster position="top-center" />
       <div className=" font-semibold text-xl flex flex-row items-center gap-2 mb-4">
         <Button
           variant="secondary"

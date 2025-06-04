@@ -1,7 +1,7 @@
 "use client";
 
 import { Star } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 interface StarRatingProps {
   maxStars?: number;
@@ -15,6 +15,11 @@ export function StarRating({
   onRatingChange,
 }: StarRatingProps) {
   const [rating, setRating] = useState(initialRating);
+
+  // Add useEffect to watch for initialRating changes
+  useEffect(() => {
+    setRating(initialRating);
+  }, [initialRating]);
 
   const handleRatingClick = (selectedRating: number) => {
     setRating(selectedRating);
