@@ -17,7 +17,7 @@ export function ReviewCard({ review, getRandomAvatar }: ReviewCardProps) {
     >
       <div className="flex flex-col items-start gap-1">
         <div className="flex flex-row items-center gap-3">
-          <Avatar>
+          <Avatar className="border-[oklch(75.56%_0.182_142.9)] border-2">
             <AvatarImage
               src={getRandomAvatar(review.email)}
               alt={review.email}

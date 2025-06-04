@@ -33,7 +33,10 @@ export function BarcodeArea() {
           </CardContent>
         </Card>
       </div>
-      <Button className="sm:mx-auto sm:w-[500px]" onClick={testDemo}>
+      <Button
+        className="sm:mx-auto sm:w-[500px] bg-[oklch(75.56%_0.182_142.9)] w-full mx-auto py-6 text-lg font-medium "
+        onClick={testDemo}
+      >
         Show Demo Product
       </Button>
     </>

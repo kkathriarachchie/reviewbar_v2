@@ -47,7 +47,7 @@ export function StarRating({
         ))}
       </div>
       {rating > 0 && (
-        <span className="text-sm text-gray-600 font-baloo">
+        <span className="text-m font-medium font-baloo">
           Selected Rating: {rating} {rating === 1 ? "Star" : "Stars"}
         </span>
       )}

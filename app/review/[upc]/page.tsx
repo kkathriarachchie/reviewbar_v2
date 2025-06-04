@@ -83,10 +83,10 @@ export default function ReviewPage() {
         <Button
           variant="secondary"
           size="icon"
-          className="size-8"
+          className="size-8 "
           onClick={() => router.push("/")}
         >
-          <ArrowLeft className="size-6" />
+          <ArrowLeft className="size-6  text-[oklch(75.56%_0.182_142.9)]" />
         </Button>
         Product UPC : {upc}
       </div>
@@ -120,7 +120,7 @@ export default function ReviewPage() {
       <div className="sticky bottom-0 py-4 bg-background mt-auto">
         <Drawer>
           <DrawerTrigger asChild>
-            <Button className="w-full mx-auto py-6 text-lg font-medium">
+            <Button className="w-full mx-auto py-6 text-lg font-medium  bg-[oklch(75.56%_0.182_142.9)]">
               Write a review
             </Button>
           </DrawerTrigger>

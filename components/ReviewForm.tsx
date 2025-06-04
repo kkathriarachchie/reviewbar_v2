@@ -67,7 +67,7 @@ export function ReviewForm({ onSubmit }: ReviewFormProps) {
     <form onSubmit={handleSubmit} className="grid gap-6 py-4">
       <div className="flex flex-col gap-4">
         <div className="grid gap-2 place-items-center">
-          <Label className="text-2xl font-semibold text-center">
+          <Label className="text-2xl font-semibold text-center text-[oklch(75.56%_0.182_142.9)]">
             Add Your Rating
           </Label>
           <StarRating
@@ -87,7 +87,7 @@ export function ReviewForm({ onSubmit }: ReviewFormProps) {
             value={formData.email}
             onChange={(e) => handleChange("email", e.target.value)}
             placeholder="Enter your email"
-            className="p-6"
+            className="p-6 border-[oklch(75.56%_0.182_142.9)] border-4 "
           />
           {errors.email && (
             <span className="text-sm text-red-500">{errors.email}</span>
@@ -101,7 +101,7 @@ export function ReviewForm({ onSubmit }: ReviewFormProps) {
             value={formData.review}
             onChange={(e) => handleChange("review", e.target.value)}
             placeholder="Write your review for this product here."
-            className="min-h-[100px] max-h-[200px] resize-none overflow-y-auto p-6"
+            className="min-h-[100px] max-h-[200px] resize-none overflow-y-auto p-6  border-[oklch(75.56%_0.182_142.9)] border-4 "
           />
           {errors.review && (
             <span className="text-sm text-red-500">{errors.review}</span>
@@ -112,7 +112,7 @@ export function ReviewForm({ onSubmit }: ReviewFormProps) {
       <DrawerFooter className="px-0">
         <Button
           type="submit"
-          className="w-full mx-auto py-6 text-lg font-medium"
+          className="w-full mx-auto py-6 text-lg font-medium bg-[oklch(75.56%_0.182_142.9)]"
         >
           Submit Review
         </Button>

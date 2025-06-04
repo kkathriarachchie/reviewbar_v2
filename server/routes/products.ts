@@ -34,6 +34,8 @@ router.post(
   }
 );
 
+const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+
 router.get(
   "/reviews/:upc",
   async (req: Request, res: Response): Promise<void> => {
