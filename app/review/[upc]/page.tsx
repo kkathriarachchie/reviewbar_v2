@@ -95,7 +95,7 @@ export default function ReviewPage() {
           {error && <div className="text-red-500 mb-4">{error}</div>}
           {reviews.length === 0 ? (
             <Card className="p-4">
-              <p>
+              <p className="font-bold text-xl text-[oklch(75.56%_0.182_142.9)]">
                 There are no reviews for this product yet. Feel free to add
                 yours and contribute to the community.
               </p>
