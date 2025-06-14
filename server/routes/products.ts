@@ -34,8 +34,6 @@ router.post(
   }
 );
 
-const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
-
 router.get(
   "/reviews/:upc",
   async (req: Request, res: Response): Promise<void> => {
@@ -55,5 +53,35 @@ router.get(
     }
   }
 );
+
+router.post("/add-reviews-list/:upc", async (req: Request, res: Response) => {
+  try {
+    const { upc } = req.params;
+    const reviewsData: IReview[] = req.body;
+
+    // Input validation
+    if (!Array.isArray(reviewsData)) {
+      res.status(400).json({ message: "Reviews must be an array" });
+      return;
+    }
+
+    let product = await Product.findOne({ upc });
+    if (!product) {
+      product = new Product({ upc, reviews: [] });
+    }
+
+    // Add all reviews to the product
+    product.reviews.push(...reviewsData);
+    await product.save();
+
+    res.status(201).json({
+      message: `Successfully added ${reviewsData.length} reviews`,
+      product,
+    });
+  } catch (error) {
+    console.error("Error adding reviews:", error);
+    res.status(500).json({ message: "Server error" });
+  }
+});
 
 export default router;

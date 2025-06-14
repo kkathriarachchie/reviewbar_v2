@@ -13,8 +13,6 @@ export interface IReview {
 export interface IProduct extends Document {
   upc: string;
   reviews: IReview[];
-  createdAt: Date;
-  updatedAt: Date;
 }
 
 const reviewSchema = new Schema<IReview>({
@@ -35,4 +33,4 @@ const productSchema = new Schema<IProduct>(
   }
 );
 
-export default mongoose.model<IProduct>("Product", productSchema);
+export default mongoose.model<IProduct>("Products", productSchema);

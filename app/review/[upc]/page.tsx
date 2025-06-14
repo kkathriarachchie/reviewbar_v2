@@ -92,7 +92,9 @@ export default function ReviewPage() {
       </div>
       <div className="flex-1 overflow-hidden">
         <ScrollArea className="h-[calc(100vh-180px)]">
-          {error && <div className="text-red-500 mb-4">{error}</div>}
+          {/*
+         {error && <div className="text-red-500 mb-4">{error}</div>}
+         */}
           {reviews.length === 0 ? (
             <Card className="p-4">
               <p className="font-bold text-xl text-[oklch(75.56%_0.182_142.9)]">
