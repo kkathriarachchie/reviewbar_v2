@@ -4,7 +4,11 @@ An Augmented Product Review App that revolutionizes how consumers access and sha
 
 ## 📖 Description
 
-In today's fast-paced retail environment, consumers are overwhelmed with countless product choices across various categories. ReviewBar addresses this challenge by providing a cutting-edge mobile web application that leverages barcode scanning technology to deliver instant access to authentic product reviews and ratings.
+In an era marked by rapid technological advancements and the ever-increasing availability of products in the market, consumers often find themselves overwhelmed when making purchase decisions. While online reviews and ratings have become a valuable resource, accessing this information quickly and conveniently, especially in physical retail settings, remains a challenge.
+In today's fast-paced world, consumers are inundated with a plethora of choices across various product categories. From electronics and fashion to household items and beyond, navigating the sea of options can be overwhelming. Often, the lack of credible and easily accessible information poses a challenge, leaving consumers unsure about which products will truly meet their expectations. This is where our app steps in – to serve as a reliable source of authentic and diverse product reviews, fostering confident decision-making and informed purchases.
+To address this need for streamlined and real-time access to product reviews and ratings, we propose the development of a cutting-edge mobile web application— an Augmented Product Review App (ReviewBar). This app aims to revolutionize the way consumers gather information about products and make informed choices and simply people can add reviews about a product that they assumed and people can check reviews about a product before they buy it, by using this app. Our solution leverages modern technology, including barcode scanning and user-generated content, to empower users with an efficient, interactive, and insightful shopping experience.
+In Conclusion: Our augmented product review app can add or view product reviews for products by leveraging the existing UPC (Universal Product Codes - Barcodes) system.
+These Universal Product Codes are regulated by the GS1 trade standard and therefore unique for each and every product globally. In Sri Lanka, these standard barcode licenses are issued by the GS1 Lanka (https://gs1lanka.org).
 
 ### Key Features
 
