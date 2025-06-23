@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { z } from "zod";
 import {
   reviewSchema,
@@ -12,6 +12,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { StarRating } from "@/components/StarRating";
 import { DrawerClose, DrawerFooter } from "@/components/ui/drawer";
+import ReCAPTCHA from "react-google-recaptcha";
 
 interface ReviewFormProps {
   onSubmit: (formData: ReviewFormData) => Promise<void>;
@@ -26,32 +27,41 @@ export function ReviewForm({ onSubmit }: ReviewFormProps) {
   const [errors, setErrors] = useState<
     Partial<Record<keyof ReviewFormData, string>>
   >({});
+  const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null);
+  const isSubmitDisabled = !recaptchaToken;
+  const recaptchaRef = useRef<ReCAPTCHA | null>(null);
 
   const handleChange = (
     field: keyof ReviewFormData,
     value: string | number
   ) => {
     setFormData((prev) => ({ ...prev, [field]: value }));
-    // Clear error when user starts typing
     setErrors((prev) => ({ ...prev, [field]: "" }));
+  };
+
+  const handleRecaptcha = (token: string | null) => {
+    setRecaptchaToken(token);
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
+    if (!recaptchaToken) {
+      return;
+    }
+
     try {
-      // Validate the form data
       const validatedData = reviewSchema.parse(formData);
-
-      // Submit the form if validation passes
+      console.log("reCAPTCHA Token:", recaptchaToken);
       await onSubmit(validatedData);
-
-      // Reset form on success
       setFormData({ rating: 0, email: "", review: "" });
       setErrors({});
+      setRecaptchaToken(null);
+      if (recaptchaRef.current) {
+        recaptchaRef.current.reset(); // Reset reCAPTCHA
+      }
     } catch (error) {
       if (error instanceof z.ZodError) {
-        // Transform Zod errors into a more usable format
         const newErrors: Record<string, string> = {};
         error.errors.forEach((err) => {
           if (err.path[0]) {
@@ -110,9 +120,17 @@ export function ReviewForm({ onSubmit }: ReviewFormProps) {
       </div>
 
       <DrawerFooter className="px-0">
+        <div className="flex justify-center w-full">
+          <ReCAPTCHA
+            ref={recaptchaRef}
+            sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ""}
+            onChange={handleRecaptcha}
+          />
+        </div>
         <Button
           type="submit"
           className="w-full mx-auto py-6 text-lg font-medium bg-[oklch(75.56%_0.182_142.9)]"
+          disabled={isSubmitDisabled}
         >
           Submit Review
         </Button>
