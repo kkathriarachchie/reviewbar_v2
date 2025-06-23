@@ -113,44 +113,6 @@ This will start both the Next.js frontend and Express.js backend concurrently.
 
 ## 📱 Screenshots
 
-### 🌙 Dark Mode
-
-<div align="center">
-
-#### Barcode Scanner Interface
-
-<img src="/public/Screenshots/Barcode scanner interface-dark_mode.png" alt="Barcode Scanner Interface - Dark Mode" width="300"/>
-
-#### Product Review Listings
-
-<img src="/public/Screenshots/Product review listings-dark_mode.png" alt="Product Review Listings - Dark Mode" width="300"/>
-
-#### Review Submission Form
-
-<img src="/public/Screenshots/Review submission form-dark_mode.png" alt="Review Submission Form - Dark Mode" width="300"/>
-
-</div>
-
-### ☀️ Light Mode
-
-<div align="center">
-
-#### Barcode Scanner Interface
-
-<img src="/public/Screenshots/Barcode scanner interface-light_mode.png" alt="Barcode Scanner Interface - Light Mode" width="300"/>
-
-#### Product Review Listings
-
-<img src="/public/Screenshots/Product review listings-light_mode.png" alt="Product Review Listings - Light Mode" width="300"/>
-
-#### Review Submission Form
-
-<img src="/public/Screenshots/Review submission form-light_mode.png" alt="Review Submission Form - Light Mode" width="300"/>
-
-</div>
-
----
-
 ### App Interface Showcase
 
 <table>
