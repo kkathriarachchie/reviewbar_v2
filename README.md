@@ -125,14 +125,6 @@ This will start both the Next.js frontend and Express.js backend concurrently.
 - Product review listings
 - Review submission form
 
-### 🎬 Demo Video
-
-<div align="center">
-
-https://github.com/kkathriarachchie/reviewbar_v2/public/DemoVideo/ReviewBarDemo.mp4
-
-</div>
-
 ### App Interface Showcase
 
 <table>
