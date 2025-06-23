@@ -146,7 +146,7 @@ This will start both the Next.js frontend and Express.js backend concurrently.
 
 ## 👥 Contact / Authors
 
-**Developer**: [Your Name]
+**Developer**: [Kavishka Kathriarachchi](https://github.com/kkathriarachchie)
 
 - GitHub: [@kkathriarachchie](https://github.com/kkathriarachchie)
 - Email: [kkathriarachchie@gmail.com](mailto:kkathriarachchie"@gmail.com)
