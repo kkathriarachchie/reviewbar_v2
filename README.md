@@ -111,13 +111,21 @@ This will start both the Next.js frontend and Express.js backend concurrently.
 - **Concurrently** - Run multiple commands simultaneously
 - **ts-node-dev** - TypeScript execution with hot reload
 
-## 📱 Screenshots
+## 📱 Screenshots/Demo
 
 ### Key App Screens:
 
 - Barcode scanner interface
 - Product review listings
 - Review submission form
+
+### 🎬 Demo Video
+
+<div align="center">
+
+https://github.com/kkathriarachchie/reviewbar_v2/public/DemoVideo/ReviewBarDemo.mp4
+
+</div>
 
 ### App Interface Showcase
 
