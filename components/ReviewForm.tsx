@@ -87,7 +87,7 @@ export function ReviewForm({ onSubmit }: ReviewFormProps) {
             value={formData.email}
             onChange={(e) => handleChange("email", e.target.value)}
             placeholder="Enter your email"
-            className="p-6 border-[oklch(75.56%_0.182_142.9)] border-4 "
+            className="p-6 border-[oklch(75.56%_0.182_142.9)] border-3 "
           />
           {errors.email && (
             <span className="text-sm text-red-500">{errors.email}</span>
@@ -101,7 +101,7 @@ export function ReviewForm({ onSubmit }: ReviewFormProps) {
             value={formData.review}
             onChange={(e) => handleChange("review", e.target.value)}
             placeholder="Write your review for this product here."
-            className="min-h-[100px] max-h-[200px] resize-none overflow-y-auto p-6  border-[oklch(75.56%_0.182_142.9)] border-4 "
+            className="min-h-[100px] max-h-[200px] resize-none overflow-y-auto p-6  border-[oklch(75.56%_0.182_142.9)] border-3 "
           />
           {errors.review && (
             <span className="text-sm text-red-500">{errors.review}</span>
