@@ -4,11 +4,13 @@ An Augmented Product Review App that revolutionizes how consumers access and sha
 
 ## 📖 Description
 
-In an era marked by rapid technological advancements and the ever-increasing availability of products in the market, consumers often find themselves overwhelmed when making purchase decisions. While online reviews and ratings have become a valuable resource, accessing this information quickly and conveniently, especially in physical retail settings, remains a challenge.
-In today's fast-paced world, consumers are inundated with a plethora of choices across various product categories. From electronics and fashion to household items and beyond, navigating the sea of options can be overwhelming. Often, the lack of credible and easily accessible information poses a challenge, leaving consumers unsure about which products will truly meet their expectations. This is where our app steps in – to serve as a reliable source of authentic and diverse product reviews, fostering confident decision-making and informed purchases.
-To address this need for streamlined and real-time access to product reviews and ratings, we propose the development of a cutting-edge mobile web application— an Augmented Product Review App (ReviewBar). This app aims to revolutionize the way consumers gather information about products and make informed choices and simply people can add reviews about a product that they assumed and people can check reviews about a product before they buy it, by using this app. Our solution leverages modern technology, including barcode scanning and user-generated content, to empower users with an efficient, interactive, and insightful shopping experience.
-In Conclusion: Our augmented product review app can add or view product reviews for products by leveraging the existing UPC (Universal Product Codes - Barcodes) system.
-These Universal Product Codes are regulated by the GS1 trade standard and therefore unique for each and every product globally. In Sri Lanka, these standard barcode licenses are issued by the GS1 Lanka (https://gs1lanka.org).
+In an era marked by rapid technological advancements and an ever-increasing range of market offerings, consumers are often overwhelmed when making purchase decisions. While online reviews and ratings serve as valuable resources, accessing this information quickly and conveniently—especially in physical retail settings—remains a challenge.
+
+Modern consumers face a flood of choices across diverse product categories, from electronics and fashion to household items and beyond. The absence of credible, easily accessible information can leave users uncertain about whether a product will truly meet their expectations.
+
+ReviewBar is designed to address this challenge. It is a cutting-edge mobile web application that provides a reliable source of authentic and diverse product reviews, fostering confident decision-making and informed purchases. The app enables users to add reviews for products they’ve experienced and check existing reviews before buying, all through a seamless and intuitive interface.
+
+The application leverages modern technologies such as barcode scanning and user-generated content to deliver a fast, efficient, and interactive shopping experience. By utilizing the globally recognized Universal Product Code (UPC) system, regulated by GS1 standards and locally administered by GS1 Lanka, the app ensures accuracy and uniqueness in product identification.
 
 ### Key Features
 
