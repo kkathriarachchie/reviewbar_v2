@@ -113,6 +113,12 @@ This will start both the Next.js frontend and Express.js backend concurrently.
 
 ## 📱 Screenshots
 
+### Key App Screens:
+
+- Barcode scanner interface
+- Product review listings
+- Review submission form
+
 ### App Interface Showcase
 
 <table>
@@ -137,12 +143,6 @@ This will start both the Next.js frontend and Express.js backend concurrently.
 <td><img src="/public/Screenshots/Review submission form-light_mode.png" alt="Form Light" width="250"/></td>
 </tr>
 </table>
-
-### Key App Screens:
-
-- Barcode scanner interface
-- Product review listings
-- Review submission form
 
 ## 👥 Contact / Authors
 
