@@ -2,7 +2,7 @@
 
 An Augmented Product Review App that revolutionizes how consumers access and share product information through barcode scanning technology.
 
-![Light Mode](/public/Screenshots/Light.png)
+![Light](/public/Screenshots/Light.png)
 
 ## 📖 Description
 
